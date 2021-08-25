@@ -2,7 +2,6 @@
 
 
 from typing import Callable
-from itertools import accumulate
 
 
 def hailstone(n: int) -> int:
