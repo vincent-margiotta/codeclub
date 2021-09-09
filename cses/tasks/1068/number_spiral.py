@@ -4,9 +4,7 @@ def main(y: int, x: int) -> int:
     m = y if y >= x else x
     result = (m*m) - m + 1
     offset = abs(y - x)
-    if m == y and m % 2 == 1:
-        offset *= -1
-    if m == x and m % 2 == 0:
+    if (m == y and m % 2 == 1) or (m == x and m % 2 == 0):
         offset *= -1
     return result + offset
 
